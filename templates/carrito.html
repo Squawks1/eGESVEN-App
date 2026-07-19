@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Carrito de Compras</h2>
+
+<table class="table table-bordered">
+
+    <thead class="table-primary">
+
+        <tr>
+
+            <th>Producto</th>
+
+            <th>Cantidad</th>
+
+            <th>Precio</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>Notebook Lenovo</td>
+
+            <td>1</td>
+
+            <td>$650.000</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Mouse Logitech</td>
+
+            <td>1</td>
+
+            <td>$18.990</td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+<h4 class="text-end">
+
+Total: $668.990
+
+</h4>
+
+<div class="text-end">
+
+    <a href="{% url 'checkout' %}" class="btn btn-success">
+
+    Finalizar compra
+
+    </a>
+
+</div>
+
+{% endblock %}
