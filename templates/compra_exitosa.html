@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<div class="text-center">
+
+    <h1 class="text-success">
+
+    Compra realizada correctamente
+
+    </h1>
+
+    <p>
+
+    Gracias por comprar en eGESVEN.
+
+    </p>
+
+    <a href="{% url 'pedidos' %}" class="btn btn-primary">
+
+    Ver mis pedidos
+
+    </a>
+
+</div>
+
+{% endblock %}
