@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Administración de Pedidos</h2>
+
+<table class="table table-hover">
+
+    <thead class="table-primary">
+
+        <tr>
+
+            <th>Pedido</th>
+
+            <th>Cliente</th>
+
+            <th>Total</th>
+
+            <th>Estado</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>1001</td>
+
+            <td>Juan Pérez</td>
+
+            <td>$668.990</td>
+
+            <td>
+
+                <select class="form-select">
+
+                    <option>Pendiente</option>
+
+                    <option>Procesando</option>
+
+                    <option>Enviado</option>
+
+                    <option>Entregado</option>
+
+                </select>
+
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+{% endblock %}
