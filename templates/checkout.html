@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Finalizar Compra</h2>
+
+<form>
+
+    <div class="mb-3">
+
+        <label>Nombre</label>
+
+        <input class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Dirección</label>
+
+        <input class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Teléfono</label>
+
+        <input class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Método de Pago</label>
+
+        <select class="form-select">
+
+            <option>Tarjeta de Crédito</option>
+
+            <option>Tarjeta de Débito</option>
+
+            <option>Transferencia</option>
+
+        </select>
+
+    </div>
+
+    <a href="{% url 'compra_exitosa' %}" class="btn btn-primary">
+
+    Confirmar Compra
+
+    </a>
+
+</form>
+
+{% endblock %}
