@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Mis Pedidos</h2>
+
+<table class="table table-striped">
+
+    <thead>
+
+        <tr>
+
+            <th>N° Pedido</th>
+
+            <th>Fecha</th>
+
+            <th>Total</th>
+
+            <th>Estado</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>1001</td>
+
+            <td>18/07/2026</td>
+
+            <td>$668.990</td>
+
+            <td>
+
+                <a href="{% url 'estado_pedido' %}" class="btn btn-warning btn-sm">
+
+                Ver Estado
+
+                </a>
+
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+{% endblock %}
