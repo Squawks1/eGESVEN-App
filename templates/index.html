@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<div class="text-center">
+
+    <h1>Bienvenido a eGESVEN</h1>
+
+    <p class="lead">
+        Sistema de Gestión de Ventas
+    </p>
+
+    <hr>
+
+    <p>
+        Prototipo del sistema desarrollado eGESVEN
+    </p>
+
+    <a href="{% url 'productos' %}" class="btn btn-primary">
+        Ver productos
+    </a>
+
+    <a href="{% url 'registro' %}" class="btn btn-success">
+        Crear cuenta
+    </a>
+
+</div>
+
+{% endblock %}
