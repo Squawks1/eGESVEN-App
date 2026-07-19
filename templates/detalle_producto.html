@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Detalle del Producto</h2>
+
+<div class="card">
+
+    <div class="card-body">
+
+        <h3>Notebook Lenovo ThinkBook</h3>
+
+        <p><strong>Precio:</strong> $650.000</p>
+
+        <p>
+            Notebook ideal para estudiantes y empresas.
+            Procesador Intel Core i5, 16 GB RAM, SSD 512 GB.
+        </p>
+
+        <p><strong>Stock disponible:</strong> 15 unidades</p>
+
+        <a href="{% url 'carrito' %}" class="btn btn-success">
+            Agregar al carrito
+        </a>
+
+        <a href="{% url 'productos' %}" class="btn btn-secondary">
+            Volver
+        </a>
+
+    </div>
+    
+</div>
+
+{% endblock %}
