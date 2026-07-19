@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<h2>Iniciar sesión</h2>
+
+<form>
+
+    <div class="mb-3">
+
+        <label>Correo</label>
+
+        <input
+        type="email"
+        class="form-control">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Contraseña</label>
+
+        <input
+        type="password"
+        class="form-control">
+
+    </div>
+
+    <a href="{% url 'productos' %}" class="btn btn-primary">
+    Ingresar
+    </a>
+
+    <a href="{% url 'registro' %}" class="btn btn-secondary">
+    Registrarse
+    </a>
+
+</form>
+
+{% endblock %}
